@@ -20,10 +20,9 @@ body {
     background-color: #1F2833;
 }
 
-.span-btn {
+.span-icon-btn {
     padding: 3px;
     border-radius: 5px;
-    background-color: #66fcf1;
     color: #66fcf1;
 }
 
@@ -121,11 +120,6 @@ section {
     text-shadow: 0 0 10px #10e6d7;
     color: #0bfded;
     transition: .2s ease-in
-}
-
-.scroll-down span {
-    color: #0bfded;
-    text-orientation:sideways-right;
 }
 
 .about {
