@@ -187,6 +187,9 @@ body {
 
 .card-title {
     color: #e8eaec;
+    font-size: larger;
+    letter-spacing: .4mm;
+    font-weight: bold;
 }
 
 .projectImg {
