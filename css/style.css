@@ -52,7 +52,8 @@ body {
 }
 
 .section {
-    height: auto;
+    height: fit-content;
+    margin-bottom: 5vh;
 }
 
 .hero {
@@ -86,22 +87,25 @@ body {
     background-color: #07736c;
     transition: .2s ease-in;
 }
-
-.next-btn {
+.projects-btn {
     width: 100px;
-    font-weight: 600;
+    font-weight: bold;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-size: 1rem;
     text-decoration: none;
-    padding: 5px;
     border-radius: 5px;
-    color: #66fcf1; 
-    border: 2px solid #66fcf1;
+    border: 1px solid #0bfded;
+    color: #0b0c10;
+    background-color: #66fcf1;
     transition: .2s ease-out;
 }
 
-.next-btn:hover {
-    background-color: #0bfded;
-    color: #0b0c10;
-    border: 1px solid #b7f6e5;
+.projects-btn:hover {
+    color: #e8eaec;
+    background-color: #07736c;
     transition: .2s ease-in;
 }
 
@@ -161,13 +165,14 @@ body {
     height: 100%;
 }
 
-.card {
-    background-color: #1F2833;
-    border-radius: 5px;
+.cardHolder {
+    width: fit-content;
 }
 
 .card-body {
     background-color: #1F2833;
+    max-height: 500px;
+    width: 280px;
     border-radius: 5px;
     border: 5px solid #0bfded;
     transition: .2s ease-out;
@@ -176,21 +181,21 @@ body {
     animation-iteration-count: infinite;
 }
 
-@keyframes glow {
-    0%   {border-color: #b7f6e5; left:0px; top:0px;}
-  25%  {border-color: #88f4ed; left:200px; top:0px;}
-  50%  {border-color: #38f4e8; left:200px; top:200px;}
-  75%  {border-color: #10e6d7; left:0px; top:200px;}
-  100% {border-color: #097a72; left:0px; top:0px;}
-}
-
 .card-body:hover {
-    box-shadow: 0 0 20px #05f5e5;
-    transition: .2s ease-in;
+    box-shadow: 0 0 5px #05f5e5;
 }
 
 .card-title {
     color: #e8eaec;
+}
+
+.projectImg {
+    width: 280px;
+    padding: 10px;
+}
+
+.porjectDescription {
+    color: #ced4da;
 }
 
 .card-body img {
@@ -198,10 +203,13 @@ body {
 }
 
 .visit-btn {
-    width: fit-content;
+    width: 125px;
     font-weight: bold;
-    padding: 10px;
-    font-size: 1rem;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-size: .9rem;
     text-decoration: none;
     border-radius: 5px;
     border: 1px solid #0bfded;
@@ -224,7 +232,7 @@ body {
 }
 
 .form:hover {
-    box-shadow: 0 0 25px #05f5e5;
+    box-shadow: 0 0 5px #05f5e5;
     transition: .3s ease-in;
 }
 
@@ -240,7 +248,7 @@ body {
 
 .contact-input:hover {
     border: 1px solid #0bfded;
-    box-shadow: 0 0 10px #10e6d7;
+    box-shadow: 0 0 5px #10e6d7;
 }
 
 .message {
@@ -254,13 +262,18 @@ body {
 }
 
 .message-btn {
-    width: fit-content;
-    font-weight: 600;
-    padding: 10px;
+    width: 125px;
+    font-weight: bold;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-size: 1rem;
+    text-decoration: none;
     border-radius: 5px;
-    border: 2px solid #078078;
-    background-color: #0bfded;
+    border: 1px solid #0bfded;
     color: #0b0c10;
+    background-color: #66fcf1;
     transition: .2s ease-out;
 }
 
